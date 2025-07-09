@@ -1,0 +1,147 @@
+body {
+  background-color: #000000;
+  color: #fce8ec;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+  background: radial-gradient(circle at center, #000000 0%, #fd7dd700 100%);
+  box-sizing: border-box;
+}
+
+.container {
+  background: #381a1a2a;
+  border: 3px solid #ff002f46;
+  border-radius: 24px;
+  box-shadow: 0 0 20px #f597a862, inset 0 0 10px #ffffff08;
+  width: 100%;
+  max-width: 420px;
+  padding: 25px 20px;
+  box-sizing: border-box;
+}
+
+.progresso {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #f6b3c1;
+}
+
+.fase {
+  min-height: 380px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.8s ease-in-out;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.fase.show {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+}
+
+.pergunta {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.titulo-etapa {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #f6b3c1;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #f6b3c211;
+  color: #fce8ec;
+  box-shadow: 0 0 8px #ffffff57;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  width: 80%;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #f6b3c2;
+  color: #ff00227e;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px #f6c1cb88;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f9ccd8;
+}
+
+.brasao-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.brasao {
+  width: 70px;
+  filter: drop-shadow(0 0 6px #f6c1cb59);
+}
+
+
+.creditos {
+  position: relative;
+  height: 420px;
+  overflow: hidden;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  font-weight: 500;
+  color: #fce8ec;
+  background: linear-gradient(135deg, #00000017, #ffffff08);
+  border-radius: 24px;
+  display: none; /* escondido inicialmente */
+}
+
+.creditos-conteudo {
+  display: inline-block;
+  animation: subirComPausa 140s linear forwards;
+  white-space: pre-line;
+}
+
+
+.brasao-creditos {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  filter: drop-shadow(0 0 7px #f6c1cb);
+}
+
+@keyframes subirComPausa {
+  0% {
+    transform: translateY(0%); /* começa visível, no topo da moldura */
+  }
+  4% {
+    transform: translateY(0%); /* ainda parado */
+  }
+  100% {
+    transform: translateY(-100%); /* sobe normalmente */
+  }
+}

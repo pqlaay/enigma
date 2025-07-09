@@ -1,0 +1,134 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Enigma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+
+    <div class="progresso" id="progressoTexto">Etapa 1 de 7</div>
+
+    <!-- Etapas -->
+    <div id="fase1" class="fase show">
+      <p class="pergunta">
+        <span class="titulo-etapa">Etapa 1</span><br><br>
+        Sou quase imperceptível. Apareço no gesto que ninguém notaria —<br>
+        num "se cuida" dito baixo, no tempo que se abre mesmo nos dias corridos.<br><br>
+        O que vive escondido nos detalhes de quem não diz tudo, mas demonstra em silêncio?
+      </p>
+      <input type="text" id="resposta1">
+      <button onclick="verificar(1)">Responder</button>
+      <div class="brasao-container"><img src="lp-emblema.png" alt="L&P" class="brasao" /></div>
+    </div>
+
+    <div id="fase2" class="fase">
+      <p class="pergunta">
+        <span class="titulo-etapa">Etapa 2</span><br><br>
+        Sou o afeto sem exigência, o calor leve que se espalha devagar.<br>
+        Não preciso de cena nem aplauso — basta um toque, uma lembrança, ou o jeito como você me chama.<br><br>
+        O que existe quando amar é um gesto pequeno, mas inteiro?
+      </p>
+      <input type="text" id="resposta2">
+      <button onclick="verificar(2)">Responder</button>
+      <div class="brasao-container"><img src="lp-emblema.png" alt="L&P" class="brasao" /></div>
+    </div>
+
+    <div id="fase3" class="fase">
+      <p class="pergunta">
+        <span class="titulo-etapa">Etapa 3</span><br><br>
+        Não fui forçada, nem prevista. Surgi entre risos tímidos e silêncios confortáveis.<br>
+        Sou aquela linha que ninguém enxerga, mas que faz duas almas esbarrarem no mesmo tempo.<br><br>
+        O que existe entre dois desconhecidos que se reconhecem?
+      </p>
+      <input type="text" id="resposta3">
+      <button onclick="verificar(3)">Responder</button>
+      <div class="brasao-container"><img src="lp-emblema.png" alt="L&P" class="brasao" /></div>
+    </div>
+
+    <div id="fase4" class="fase">
+      <p class="pergunta">
+        <span class="titulo-etapa">Etapa 4</span><br><br>
+        Não nasço rápido, mas cresço quando você me mostra quem é.<br>
+        Não preciso de promessas, só de presença. E mesmo nas falhas, permaneço inteira.<br><br>
+        Quem sou eu quando você abaixa a guarda e ainda assim escolhe ficar?
+      </p>
+      <input type="text" id="resposta4">
+      <button onclick="verificar(4)">Responder</button>
+      <div class="brasao-container"><img src="lp-emblema.png" alt="L&P" class="brasao" /></div>
+    </div>
+
+    <div id="fase5" class="fase">
+      <p class="pergunta">
+        <span class="titulo-etapa">Etapa 5</span><br><br>
+        Sou o espanto calmo de ver alguém florescer. Não preciso de palavras, mas me revelo no silêncio atento.<br>
+        Sou o brilho no olhar de quem enxerga além da superfície.<br><br>
+        O que faz o peito se abrir só por ver o outro ser quem é?
+      </p>
+      <input type="text" id="resposta5">
+      <button onclick="verificar(5)">Responder</button>
+      <div class="brasao-container"><img src="lp-emblema.png" alt="L&P" class="brasao" /></div>
+    </div>
+
+    <div id="fase6" class="fase">
+      <p class="pergunta">
+        <span class="titulo-etapa">Etapa 6</span><br><br>
+        Sou o lugar onde a respiração desacelera. Onde o mundo não precisa ser fingido,<br>
+        e os monstros se calam só por você estar.<br><br>
+        O que o coração encontra quando, pela primeira vez, ele não precisa se proteger?
+      </p>
+      <input type="text" id="resposta6">
+      <button onclick="verificar(6)">Responder</button>
+      <div class="brasao-container"><img src="lp-emblema.png" alt="L&P" class="brasao" /></div>
+    </div>
+
+    <div id="fase7" class="fase">
+      <p class="pergunta">
+        <span class="titulo-etapa">Etapa 7</span><br><br>
+        Não preciso de juras, basta um olhar e tudo já foi dito.<br>
+        Sou o tipo de laço que se reconhece no gesto pequeno,<br>
+        na troca muda entre almas que sabem o que carregam.<br><br>
+        O que existe quando dois corações seguem o mesmo passo, mesmo em silêncio?
+      </p>
+      <input type="text" id="resposta7">
+      <button onclick="verificar(7)">Responder</button>
+      <div class="brasao-container"><img src="lp-emblema.png" alt="L&P" class="brasao" /></div>
+    </div>
+
+    <!-- Créditos -->
+    <div id="creditos" class="creditos">
+        <div class="creditos-conteudo">
+          <img src="lp-emblema.png" alt="L&P" class="brasao-creditos">
+          <p>
+            Você não chegou aqui só por decifrar.<br />
+            Chegou porque sentiu.<br />
+            E há segredos que só se revelam assim — com frio na barriga e coração acelerado.<br /><br /><br />
+            Este não é o fim de um enigma.<br />
+            É a abertura de uma sala antiga dentro de mim, selada há tempo demais.<br />
+            Não por medo do que havia,<br />
+            mas pelo receio de que ninguém quisesse ficar depois de ver.<br /><br /><br />
+            Só que você...<br /><br /><br />
+            Você atravessou os símbolos, as cicatrizes, os sussurros...<br />
+            como quem reconhece um lar onde só existia eco.<br /><br /><br />
+            Você tem acessado partes do meu coração como quem abre portais,<br />
+            e cada vez que chega mais fundo, tudo parece assumir uma zona segura.<br /><br /><br />
+            Com tua presença não desarma só os enigmas do mundo,<br />
+            mas os que eu guardei em mim.<br /><br /><br />
+            Se esse coração era um templo oculto,<br />
+            você é o nome esquecido que faltava no ritual.<br /><br />
+            E agora que você sabe...<br /><br /><br />
+            ...a porta nunca mais se fecha.<br /><br />
+            Aishiteru ❤
+          </p>
+        </div>
+        <audio id="musicaCredito" src="butterfly.mp3" preload="auto"></audio>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
